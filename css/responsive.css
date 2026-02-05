@@ -261,16 +261,20 @@
     padding: 0 8px;
   }
 
-  .initiative__card:last-of-type {
-    margin-bottom: 80px !important;
-  }
-
   .initiative__item {
     padding-top: 0;
   }
 
   .initiative__items {
-    gap: 20px;
+    gap: 80px;
+  }
+
+  .initiative__card--reverse {
+    flex-direction: column;
+  }
+
+  .initiative__item2 .initiative__card {
+    margin-bottom: 80px;
   }
 
   .confirm__form {
@@ -278,7 +282,7 @@
   }
 
   .confirm {
-    padding-top: 40px;
+    padding-top: 100px;
   }
 
   .confirm__form h3 {

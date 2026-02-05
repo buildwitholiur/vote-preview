@@ -493,12 +493,19 @@ body {
   max-width: 260px;
   margin-bottom: 130px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   opacity: 0.25;
   transition: all 0.35s ease;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease;
   -ms-transition: all 0.35s ease;
   -o-transition: all 0.35s ease;
+}
+
+.initiative__card--reverse {
+  flex-direction: column-reverse;
 }
 
 .initiative__card:hover,
@@ -524,12 +531,6 @@ body {
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
-  margin-bottom: 14px;
-}
-
-.initiative__card--reverse img {
-  margin-bottom: 0;
-  margin-top: 14px;
 }
 
 .initiative__card .initiative__card-text {
