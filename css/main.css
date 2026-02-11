@@ -322,8 +322,11 @@ body {
 }
 
 .nav__supporter {
-  width: fit-content;
+  display: inline-flex;
+  align-items: center;
   height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav__supporter1 {
