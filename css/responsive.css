@@ -217,6 +217,10 @@
     padding: 0 25px;
   }
 
+  .header .container {
+    padding: 0 16px;
+  }
+
   .hero__content h1 {
     font-size: 60px;
     line-height: 58px;
@@ -248,7 +252,6 @@
 
   .initiative__card {
     max-width: 100%;
-    opacity: 0.5;
   }
 
   .initiative__card img {
@@ -335,9 +338,12 @@
     left: 0;
   }
 
-  .nav__logo,
-  .nav__supporter {
+  .nav__logo {
     height: 26px;
+  }
+
+  .nav__supporter {
+    height: clamp(10px, 6vw, 25px);
   }
 
   .nav__supporters {
@@ -345,7 +351,7 @@
   }
 
   .navbar__toggler {
-    top: 5px;
+    top: 3px;
   }
 
   .nav__supporters {

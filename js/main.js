@@ -28,13 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
   cards.forEach((card) => {
     card.addEventListener("click", (e) => {
       e.stopPropagation(); // prevent document click
-      cards.forEach((c) => c.classList.remove("is-active"));
+      cards.forEach((c) => {
+        c.classList.remove("is-active");
+        c.classList.add("disable");
+      });
+      card.classList.remove("disable");
       card.classList.add("is-active");
     });
   });
 
   // click outside cards
   document.addEventListener("click", () => {
-    cards.forEach((card) => card.classList.remove("is-active"));
+    cards.forEach((card) => {
+      card.classList.remove("is-active");
+      card.classList.remove("disable");
+    });
   });
 });
